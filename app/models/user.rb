@@ -5,5 +5,5 @@
 #folder usually has edit.erb, index.erb, new.erb, show.erb
 
 class User < ActiveRecord::Base
-  validates_presence_of :name, :password, :balance
+  validates_presence_of :username, :password, :balance
 end
