@@ -11,7 +11,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/login' do
-
+    binding.pry
+    @user = User.finb_by(id: params[:id])
   end
 
   get '/account' do
@@ -24,4 +25,3 @@ class ApplicationController < Sinatra::Base
 
 
 end
-
